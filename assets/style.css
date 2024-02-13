@@ -78,7 +78,14 @@ main {
     height: 35px;
     width: 40px;
 }
+.card_top{
+    background-color: var(--dashboard-whitish);
+ 
+}
 
+.fa-pencil , .fa-trash{
+    color: grey;
+}
 @media screen and (max-width: 767px) {
     .studente_banner{
         order: -1;
