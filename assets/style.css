@@ -16,12 +16,20 @@ body {
 
 
 #site_header {
-    height: 65px;
-    background-color: var(--dashboard-whitish);
+    height: 60px;
+
 }
 
 .nav-center .form-control,
 .input-group-text {
-    background-color: var(--dashboard-light);
+    background-color: var(--dashboard-whitish);
 }
 
+.nav-link:has(.fa-bell) {
+    color: var(--dashboard-process);
+}
+
+
+.nav-link:has(.fa-bell)::after {
+    display: none;
+}
