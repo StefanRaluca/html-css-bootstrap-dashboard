@@ -1,0 +1,27 @@
+:root {
+    --dashboard-light: rgba(248, 249, 250, 1);
+    --dashboard-whitish: rgba(229, 229, 229, 1);
+    --dashboard-process: rgba(255, 143, 0, 1);
+    --dashboard-dark: rgba(91, 88, 88, 1);
+    --dashboard-header: #1b72e8;
+    --dashboard-sidebar: rgba(5, 30, 52, 1);
+}
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+
+#site_header {
+    height: 65px;
+    background-color: var(--dashboard-whitish);
+}
+
+.nav-center .form-control,
+.input-group-text {
+    background-color: var(--dashboard-light);
+}
+
