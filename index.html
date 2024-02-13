@@ -73,7 +73,7 @@
                                     <i class="fa-solid fa-ellipsis-vertical"></i>
                                 </a>
                             </li>
-                            <!-- dropdown menu -->
+                            <!-- dropdown menu with options -->
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
@@ -104,10 +104,46 @@
         </nav>
     </header>
 
-    <main>
+    <!-- start menu sidebar -->
+    <nav class="h-100 sidebar_menu">
+        <div class="sidebar_container d-flex h-100">
+<!-- menu sidebar top with 3 option -->
+            <div id="sidebar_top" class="h-100 d-flex flex-column justify-content-between w-auto text-white p-3">
+                <!-- start options list -->
+                <ul class="list-unstyled">
+                    <li class="p-1 mb-1">
+                        <a href="#" class="nav-link d-flex gap-3 align-items-center">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="d-none d-lg-block">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="p-1 mb-1">
+                        <a href="#" class="nav-link d-flex gap-3 align-items-center">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <span class="d-none d-lg-block">Stats</span>
+                        </a>
+                    </li>
+
+                    <li class="p-1 mb-1">
+                        <a href="#" class="nav-link d-flex gap-3 align-items-center">
+                            <i class="fa-solid fa-signal"></i>
+                            <span class="d-none d-lg-block">Signals</span>
+                        </a>
+                    </li>
 
 
-    </main>
+                </ul>
+<!-- last option in bottom -->
+                <div class="admin p-1 mb-1 ">
+                    <a href="#" class="nav-link d-flex gap-3 align-items-center ">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="d-none d-lg-block">Admin</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
 </body>
 
 </html>
