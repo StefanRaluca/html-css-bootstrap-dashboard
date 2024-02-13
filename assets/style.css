@@ -7,18 +7,17 @@
     --dashboard-sidebar: rgba(5, 30, 52, 1);
 }
 
-
-
 body {
     font-family: 'Roboto', sans-serif;
     height: 100vh;
+    padding-top: 60px;
 }
 
 /* design header */
-#site_header {
+ #site_header {
     height: 60px;
 
-}
+} 
 
 .nav-center .form-control,
 .input-group-text {
@@ -37,8 +36,9 @@ body {
 
 
 /* start nav sidebar */
+
 .sidebar_menu {
-    padding-top: 60px;
+    flex-shrink: 0;
 }
 
 
@@ -46,6 +46,7 @@ body {
     background-image: url(./img/sidebar-bg.png);
     background-color: var(--dashboard-sidebar);
 }
+
 /* style of btn in hover */
 li:has(.nav-link):hover {
     background-color: rgba(255, 255, 255, 0.522);
@@ -54,3 +55,21 @@ li:has(.nav-link):hover {
 .admin .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.522);
 }
+
+
+
+.banner {
+    background-color:var(--dashboard-header);
+   
+}
+
+
+main {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.custom_badge{
+    background-color: rgb(1 52 97 / 37%);
+  font-weight: initial;
+}
+  
