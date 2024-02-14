@@ -204,10 +204,93 @@
                     </div>
                     <div class="studente_banner col-12 col-md-3 col-lg-3 d-flex  gap-2 py-2  text-white">
                         <span>Nuovo Studente</span>
-                        <button class="btn border rounded text-white custom_button" type="button">
+                        <button class="btn border rounded text-white custom_button" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
                             <i class="fa-solid fa-plus"></i>
                         </button>
+
+                        <!-- Offcanvas -->
+                        <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvas"
+                            aria-labelledby="offcanvasLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body offcanvas-start">
+                                <form class="offcanvas-start" method="get">
+                                    <div class="col-12 d-lg-flex justify-content-lg-between">
+                                        <span class="w-50 me-lg-2">
+                                            <label for="name" class="form-label form_text_style mt-3">Cognome</label>
+                                            <input type="text" class="form-control" id="name">
+                                        </span>
+
+                                        <span class="w-50 me-lg-2">
+                                            <label for="surname" class="form-label mt-3">Nome</label>
+                                            <input type="text" class="form-control" id="surname">
+                                        </span>
+
+                                    </div>
+                                    <div class="col-12 d-lg-flex">
+                                        <span class="w-50 me-lg-2">
+                                            <label for="InputEmail" class="form-label my-3">Email address</label>
+                                            <input type="email" class="form-control" id="emailInput" placeholder="@">
+                                        </span>
+
+                                        <span class="w-50 me-lg-2">
+                                            <label for="InputPassword" class="form-label  mt-4">Password</label>
+                                            <input type="password" class="form-control" id="Pass">
+                                        </span>
+
+                                    </div>
+                                    <div class="col-12">
+
+                                        <label for="indirizzo" class="form-label mt-3">Indirizzo</label>
+                                        <input type="text" class="form-control" id="indirizzo">
+
+                                        <div class="col-12 d-lg-flex">
+                                            <span class="w-50">
+                                                <label for="city" class="form-label mt-3">Città</label>
+                                                <input type="text" class="form-control" id="city">
+                                            </span>
+
+                                            <span class="mx-lg-3">
+                                                <label for="country" class="form-label mt-3">Stato</label>
+                                                <select class="form-select" id="country"
+                                                    aria-label="Default select example">
+                                                    <option selected>Scegli...</option>
+                                                    <option value="1">Italia</option>
+                                                    <option value="2">Romania</option>
+                                                    <option value="3">Turchia</option>
+                                                    <option value="4">SUA</option>
+                                                </select>
+                                            </span>
+
+                                            <span>
+                                                <label for="cap" class="form-label mt-3">CAP</label>
+                                                <input type="text" class="form-control" id="capInput" pattern="[0-9]{5}"
+                                                    title="Please enter a valid postal code (5 numbers)">
+                                            </span>
+
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="photo" class="form-label mt-3">Foto</label>
+                                            <input class="form-control" type="file" id="photo">
+                                        </div>
+
+                                        <div class="col-12 form-check mt-3">
+                                            <input type="checkbox" class="form-check-input" id="Check1">
+                                            <label class="form-check-label" for="Check2">Seleziona per
+                                                proseguire</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary m-3">Salva</button>
+                                        <button type="reset" class="btn btn-warning mx-2">Cancella</button>
+                                        <!-- end button plus with offcanvas -->
+                                </form>
+                            </div>
+                        </div>
                     </div>
+
 
                 </div>
             </div>
