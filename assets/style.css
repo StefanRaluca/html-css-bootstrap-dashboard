@@ -11,6 +11,7 @@ body {
     font-family: 'Roboto';
     height: 100vh;
     padding-top: 60px;
+  
 }
 
 /* design header */
@@ -67,6 +68,7 @@ li:has(.nav-link):hover {
 main {
     flex-grow: 1;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 .custom_badge{
     background-color: rgb(1 52 97 / 37%);
@@ -86,6 +88,7 @@ main {
 .fa-pencil , .fa-trash{
     color: grey;
 }
+
 @media screen and (max-width: 767px) {
     .studente_banner{
         order: -1;
